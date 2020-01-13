@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Patterns1.App" Collapsed="true">
+    <Position X="23.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Administrator">
+    <Position X="14.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdministratorsTable">
+    <Position X="11.25" Y="11.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\AdministratorsTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Car">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCCAAAAAAAAAAAAAAAAAQAAAAAAAABAAAABAAAAAA=</HashCode>
+      <FileName>Entity\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarsTable">
+    <Position X="7" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\CarsTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CheckHandler">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAMAAEAAAAAAAAAAAgABABQIAAAAABAAAAAAAA=</HashCode>
+      <FileName>Control\Handler\CheckHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="car" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Client">
+    <Position X="7.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAQAAAAACAAAAAAAAAQA=</HashCode>
+      <FileName>Entity\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientsTable">
+    <Position X="5.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAACAAAAAAAAEIAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Entity\ClientsTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Clients" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientsTableMySqlConnector">
+    <Position X="7" Y="16.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAABAFAAAAAAAACAIAAAAA=</HashCode>
+      <FileName>Control\Adapters\ClientsTableAdapter\ClientsTableMySqlConnector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Place">
+    <Position X="2" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entity\Place.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlacesTable">
+    <Position X="2" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgQAAEAAAAAAAAIAAAAAAAAAAAEIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entity\PlacesTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlacesTableMySqlConnector">
+    <Position X="3.5" Y="16.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAABAFAAAAAAAACAIAAAAA=</HashCode>
+      <FileName>Control\Adapters\PlacesTableAdapter\PlacesTableMySqlConnector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.Exceptions.CheckCarException">
+    <Position X="9.25" Y="20.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\CheckCarException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Properties.Resources" Collapsed="true">
+    <Position X="27.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Properties.Settings" Collapsed="true">
+    <Position X="25.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.StartClientWindow">
+    <Position X="0.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAABAgAAAAACAAAAAAI=</HashCode>
+      <FileName>View\StartClientWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.IdentificationClientWindow">
+    <Position X="3" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>View\IdentificationClientWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.ActionClientWindow">
+    <Position X="8.5" Y="1.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ActionClientWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.IdentificationAdministratorWindow">
+    <Position X="17" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\IdentificationAdministratorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.ActionAdministratorWindow">
+    <Position X="19.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\ActionAdministratorWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.InputCarWindow">
+    <Position X="11" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\InputCarWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.OutputCarWindow">
+    <Position X="12.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\OutputCarWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.View.CarCheckWindow">
+    <Position X="14.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\CarCheckWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.Entity.AutoParkingDb">
+    <Position X="4" Y="6.75" Width="1.5" />
+    <AssociationLine Name="AdministratorsTable" Type="AdministratorsTable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="8.882" />
+        <Point X="5.25" Y="11.25" />
+        <Point X="10.875" Y="11.25" />
+        <Point X="10.875" Y="12.219" />
+        <Point X="11.25" Y="12.219" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAACAAAAAAAAAAAAAIABABABAAAAAAAAAAAACA=</HashCode>
+      <FileName>Entity\AutoParkingDb.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PlacesTable" />
+      <Property Name="ClientsTable" />
+      <Property Name="AdministratorsTable" />
+      <Property Name="CarsTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Patterns1.RegistrationClientWindow">
+    <Position X="5.5" Y="1.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RegistrationClientWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns1.Control.Handler.WindowsOpenHandler">
+    <Position X="0.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAgAABAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Control\Handler\WindowsOpenHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Control.Handler.IdentificationHandler">
+    <Position X="3.25" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Control\Handler\IdentificationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Control.Handler.RegistrationHandler">
+    <Position X="5.5" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Control\Handler\RegistrationHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Control.Handler.FreeSpaceHandler">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Control\Handler\FreeSpaceHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Control.Handler.ControlCarHandler">
+    <Position X="12.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQIAAACAgAAAAAABABAAAACAAAAAAAACAA=</HashCode>
+      <FileName>Control\Handler\ControlCarHandler.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Patterns1.Exceptions.RegistrationException" Collapsed="true">
+    <Position X="11.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\RegistrationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Exceptions.IdentificationException" Collapsed="true">
+    <Position X="6.25" Y="20.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\IdentificationException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Control.Adapters.PlacesTableAdapter.PlacesTableMsSqlConnector">
+    <Position X="1" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAABAFAAAAAAAACAIAAAAA=</HashCode>
+      <FileName>Control\Adapters\PlacesTableAdapter\PlacesTableMsSqlConnector.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Patterns1.Control.Adapters.PlacesTableAdapter.IPlacesTableConnector">
+    <Position X="2" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Control\Adapters\PlacesTableAdapter\IPlacesTableConnector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Patterns1.Control.Adapters.ClientsTableAdapter.IClientsTableConnector">
+    <Position X="7.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Control\Adapters\ClientsTableAdapter\IClientsTableConnector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

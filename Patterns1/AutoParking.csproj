@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C84AB957-1B92-4A77-9893-58334C1B6699}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutoParking</RootNamespace>
+    <AssemblyName>AutoParking</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Control\Adapters\AdministratorsTableConnector.cs" />
+    <Compile Include="Control\Adapters\CarsTableAdapter\CarsTableMySqlConnector.cs" />
+    <Compile Include="Control\Adapters\CarsTableAdapter\ICarsTableConnector.cs" />
+    <Compile Include="Control\Adapters\ClientsTableAdapter\IClientsTableConnector.cs" />
+    <Compile Include="Control\Adapters\Converter.cs" />
+    <Compile Include="Control\Adapters\PlacedCarsTableAdapter\IPlacedCarsTableConnector.cs" />
+    <Compile Include="Control\Adapters\PlacedCarsTableAdapter\PlacedCarsTableMySqlConnector.cs" />
+    <Compile Include="Control\Adapters\PlacesTableAdapter\IPlacesTableConnector.cs" />
+    <Compile Include="Control\Adapters\TableConnector.cs" />
+    <Compile Include="Control\Handler\AdminHandler.cs" />
+    <Compile Include="Control\Handler\CarTableHandler.cs" />
+    <Compile Include="Control\Handler\ClientBlockHandler.cs" />
+    <Compile Include="Control\Handler\ControlCarHandler.cs" />
+    <Compile Include="Control\Handler\FreeSpaceHandler.cs" />
+    <Compile Include="Control\Handler\IdentificationHandler.cs" />
+    <Compile Include="Control\Handler\LiftHandler.cs" />
+    <Compile Include="Control\Handler\ProfileChangeHandler.cs" />
+    <Compile Include="Control\Handler\RegistrationHandler.cs" />
+    <Compile Include="Control\Handler\WindowsOpenHandler.cs" />
+    <Compile Include="Control\Validates\ValidateField.cs" />
+    <Compile Include="Entity\Other\CurrentCar.cs" />
+    <Compile Include="Entity\Other\SystemUser.cs" />
+    <Compile Include="Entity\Tables\PlacedCar.cs" />
+    <Compile Include="Entity\Tables\PlacedCarsTable.cs" />
+    <Compile Include="Exceptions\DatabaseActionException.cs" />
+    <Compile Include="Exceptions\IdentificationException.cs" />
+    <Compile Include="Exceptions\InputException.cs" />
+    <Compile Include="Exceptions\LiftException.cs" />
+    <Compile Include="Exceptions\RegistrationException.cs" />
+    <Compile Include="View\ActionClientWindow.xaml.cs">
+      <DependentUpon>ActionClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Adapters\ClientsTableAdapter\ClientsTableMySqlConnector.cs" />
+    <Compile Include="Control\Adapters\PlacesTableAdapter\PlacesTableMySqlConnector.cs" />
+    <Compile Include="Entity\AutoParkingDb.cs" />
+    <Compile Include="View\AddCarWindow.xaml.cs">
+      <DependentUpon>AddCarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CarListWindow.xaml.cs">
+      <DependentUpon>CarListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\EditCarWindow.xaml.cs">
+      <DependentUpon>EditCarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\IdentificationClientWindow.xaml.cs">
+      <DependentUpon>IdentificationClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InputCarWindow.xaml.cs">
+      <DependentUpon>InputCarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\OutputCarWindow.xaml.cs">
+      <DependentUpon>OutputCarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProfileWindow.xaml.cs">
+      <DependentUpon>ProfileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\RegistrationClientWindow.xaml.cs">
+      <DependentUpon>RegistrationClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StartClientWindow.xaml.cs">
+      <DependentUpon>StartClientWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\ActionClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddCarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CarListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\EditCarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\IdentificationClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InputCarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity\Tables\Administrator.cs" />
+    <Compile Include="Entity\Tables\AdministratorsTable.cs" />
+    <Compile Include="Entity\Tables\Car.cs" />
+    <Compile Include="Entity\Tables\CarsTable.cs" />
+    <Compile Include="Control\Handler\CheckHandler.cs" />
+    <Compile Include="Entity\Tables\Client.cs" />
+    <Compile Include="Entity\Tables\ClientsTable.cs" />
+    <Compile Include="Entity\Tables\Place.cs" />
+    <Compile Include="Entity\Tables\PlacesTable.cs" />
+    <Compile Include="Exceptions\CheckCarException.cs" />
+    <Page Include="View\OutputCarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\RegistrationClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StartClientWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

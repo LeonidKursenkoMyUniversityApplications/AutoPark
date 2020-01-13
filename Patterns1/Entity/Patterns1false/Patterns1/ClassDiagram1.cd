@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Patterns1.App" Collapsed="true">
+    <Position X="18.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Patterns1.TestWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAABAAAAAAACAAAAAAA=</HashCode>
+      <FileName>TestWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.346" Collapsed="true" />
+  </Class>
+  <Class Name="ActionAdministratorWindow">
+    <Position X="13.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Terminal" Type="Terminal" ManuallyRouted="true">
+      <Path>
+        <Point X="14.375" Y="4.805" />
+        <Point X="14.375" Y="6.583" />
+        <Point X="10.104" Y="6.583" />
+        <Point X="10.104" Y="6.509" />
+        <Point X="8" Y="6.509" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAIABiAICAQAAAAABACEAEBAAAAYAAAAAAI=</HashCode>
+      <FileName>Classes\ActionAdministratorWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ActionClientWindow">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <AssociationLine Name="Terminal" Type="Terminal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.344" Y="4.132" />
+        <Point X="8.344" Y="5.74" />
+        <Point X="8" Y="5.74" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAIAAABAAI=</HashCode>
+      <FileName>Classes\ActionClientWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Administrator" Collapsed="true">
+    <Position X="17.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdministratorsTable">
+    <Position X="17.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\AdministratorsTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AutoParking">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="StartClientWindow" Type="StartClientWindow" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="0.812" />
+        <Point X="6.575" Y="0.884" />
+        <Point X="1.875" Y="0.884" />
+        <Point X="1.875" Y="2" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAIABAgAAAAAAAAAAAAAEAEAAAAAAAABAAI=</HashCode>
+      <FileName>Classes\AutoParking.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ActionAdministratorWindow" />
+      <Property Name="ActionClientWindow" />
+      <Property Name="IdenteficationAdministratorWindow" />
+      <Property Name="IdentificationClientWindow" />
+      <Property Name="RegistrationClientWindow" />
+      <Property Name="StartClientWindow" />
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Car">
+    <Position X="12" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCCAAAAAAAAAAAAAAAAAQAAAAAAAABAAAABAAAAAA=</HashCode>
+      <FileName>Classes\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CarsTable">
+    <Position X="12.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAAAAEIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\CarsTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Check">
+    <Position X="8.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAMAAEAAAAAAAAAAAgABABQIAAAAABAAAAAAAA=</HashCode>
+      <FileName>Classes\Check.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="car" />
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Client" Collapsed="true">
+    <Position X="14.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAQAAAAACAAAAAAAAAQA=</HashCode>
+      <FileName>Classes\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClientsTable">
+    <Position X="14.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAACAAAAAAAAEIAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Classes\ClientsTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Clients" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClientTableConnector">
+    <Position X="14.75" Y="10.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAABAFAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Classes\ClientTableConnector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlCar">
+    <Position X="5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQIBAAAAAAAAAAABABAAAACAAAAAAAACAA=</HashCode>
+      <FileName>Classes\ControlCar.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+      <Property Name="Car" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IdentificationAdministratorWindow">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <AssociationLine Name="Terminal" Type="Terminal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.938" Y="3.882" />
+        <Point X="10.938" Y="5.98" />
+        <Point X="8" Y="5.98" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAABAAAAAAAAAAABQAAAAAAAAAIAAAAAAI=</HashCode>
+      <FileName>Classes\IdentificationAdministratorWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IdentificationClientWindow">
+    <Position X="3.25" Y="2" Width="2.25" />
+    <AssociationLine Name="Terminal" Type="Terminal" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.767" Y="4.132" />
+        <Point X="4.767" Y="5.74" />
+        <Point X="6.5" Y="5.74" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAABAAAAAAAAAAABQAAAAAAAAAIAAAAAAI=</HashCode>
+      <FileName>Classes\IdentificationClientWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Place">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Classes\Place.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlacesTable">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgQAAEAAAAAAAAIAAAAAAAAAAAEIABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\PlacesTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlacesTableConnector">
+    <Position X="1" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAAAAAAAAAAAAABAFAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Classes\PlacesTableConnector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RegistrationClientWindow">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAABAAAAAAAAAAABQAAAAAAAAAIAAAAAAI=</HashCode>
+      <FileName>Classes\RegistrationClientWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="StartClientWindow">
+    <Position X="0.75" Y="2" Width="2.25" />
+    <AssociationLine Name="Terminal" Type="Terminal" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.625" Y="4.132" />
+        <Point X="2.625" Y="5.98" />
+        <Point X="6.5" Y="5.98" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAgAAAAAAABAAAAAAAAAAIAQAAAAI=</HashCode>
+      <FileName>Classes\StartClientWindow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Terminal" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Terminal">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <AssociationLine Name="ControlCar" Type="ControlCar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.281" Y="9.555" />
+        <Point X="7.281" Y="9.93" />
+        <Point X="6.188" Y="9.93" />
+        <Point X="6.188" Y="10.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAIQAABKAAAAAACAgAAAAIADABABAAAIAAAAAAEACI=</HashCode>
+      <FileName>Classes\Terminal.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CarsTable" />
+      <Property Name="ControlCar" />
+      <Property Name="AdministratorsTable" />
+      <Property Name="ClientsTable" />
+      <Property Name="PlacesTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Patterns1.Exceptions.CheckCarException">
+    <Position X="8.25" Y="13.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exceptions\CheckCarException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Properties.Resources" Collapsed="true">
+    <Position X="21.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patterns1.Properties.Settings" Collapsed="true">
+    <Position X="20" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

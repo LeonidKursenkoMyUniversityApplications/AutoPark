@@ -1,0 +1,14 @@
+﻿<Window x:Class="LiftEmulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiftEmulator"
+        mc:Ignorable="d"
+        Title="Lift emulator" Height="287" Width="294">
+    <Grid Margin="0,0,-8,-21">
+        <Button x:Name="button" Content="Successful lift operation" HorizontalAlignment="Left" Margin="45,40,0,0" VerticalAlignment="Top" Width="220" Height="30" Click="button_Click"/>
+        <Button x:Name="button1" Content="trouble" HorizontalAlignment="Left" Margin="45,100,0,0" VerticalAlignment="Top" Width="220" Height="30" Click="button1_Click"/>
+
+    </Grid>
+</Window>
